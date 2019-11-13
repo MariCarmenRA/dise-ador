@@ -1,0 +1,182 @@
++<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Anni Albers</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+
+
+        <style type="text/css">
+            :root{
+                --c:orange;
+                --altura:70vh;
+            }
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                font-size: 16px; 
+            }
+
+            header {
+                width: 100%;
+                display: flex;
+            }
+           
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            header>div {
+                width: 50%;
+                height: 60vh;
+            }
+
+            .bloc_esq {
+                background: purple;
+
+            }
+
+            .bloc_esq img {
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .bloc_dre {
+                background: pink;
+            }
+
+            .bloc_dre img {
+                object-fit: cover;
+                object-position: center;
+            }
+
+            h1 {
+                font-family: 'Abril Fatface', cursive;
+                position: absolute;
+                text-align: center;
+                top: 45vh;
+                font-size: 2vw;
+                width: 100%;
+                color: white;
+
+            }
+
+            article {
+                width: 33.4em;
+                margin: auto;
+
+            }
+
+            article>p:first-child {
+                padding: 40px 0;
+                color: var(--c);
+                column-count: 2;
+                column-gap: 30px;
+                text-align: justify;
+                hyphens: auto;
+                line-height: 25px;
+                column-rule: 1px solid orange;
+            }
+           article #coss>p:first-child::first-letter {
+                color: orange;
+                font-size: 5em;
+                font-family: 'Georgia', sans-serif;
+                float: left;
+                margin-right: 0.2em;
+                margin-top: -0.35em;
+               margin-bottom: 0;
+                padding-bottom: 0;
+                padding-right: 0.2em;
+            
+            }
+            article #coss {
+                text-align: justify;
+                hyphens: auto;
+                width: auto;
+                padding: 0 3em; 
+            }
+            article #coss p {
+                padding: 0 0 1.5em 0;
+            }
+            .cercle, .hexagon {
+                background: var(--c);
+            }
+            .cercle img, .hexagon img {
+                mix-blend-mode: hard-light;
+            }
+            .cercle, .cercle img {
+                clip-path: circle(30%);
+
+            }
+            .cercle {
+                max-width: 20em;
+                float: left;
+                margin-left: -8em;
+                shape-margin: 1em;
+                shape-outside: circle(50%)border-box;
+            }
+            .hexagon, .hexagon img {
+               clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ 
+            }
+            .hexagon {
+                max-height: 30em;
+                float: right;
+                margin-right: -7em;
+                shape-margin: 1em;
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+            }
+            @media (max-width:600px) {
+                body{
+                    background: azure;
+                    font-size: 12px;
+
+                }
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="bloc_esq">
+                <img src="img/01-annie-albers.jpg">
+            </div>
+
+            <div class="bloc_dre">
+                <img src="img/anni-albers-in-her-weaving-studio-at-black-mountain-college_-1937_psd.jpg">
+            </div>
+            <h1>Anni Albers, diseñadora textil, tejedora, pintora y profesora de la Escuela de la Bauhaus.</h1>
+        </header>
+        <article>
+
+            <p> Anneliese Fleischmann nació en Berlin-Charlottenburg en una familia acomodada de origen judío convertida al protestantismo. Su madre, Toni Fleischmann-Ullstein, provenía de una conocida familia judía alemana de editores, los Ullstein, y su padre, Siegfried Fleischmann, era un importante fabricante de muebles.Durante su época escolar Anni recibió clases particulares de arte.</p>
+              <div id="coss">
+               <div class="cercle">
+            <img src="img/bn.jpg" alt="telas">
+            </div>
+ <p> En el libro "Ullsteinroman" (la novela de los Ullstein) Sten Nadolny dice que Anni era la más peligrosa para la familia Fleischmann, en el sentido de la más revolucionaria, que además era la más bonita y quería ser una artista bohemia.</p>
+           
+            <p>Cuando tenía 17 años ingresó en el estudio de pintura y arquitectura de Martin Brandenburgen en Berlín, donde a pesar de ser desalentada de continuar por parte de Oskar Kokoschka, se graduó con una educación artística de tres años. Posteriormente intentó acceder a la Escuela Superior de Bellas Artes de Dresde, pero no lo consiguió, y en 1919 se marchó y se matriculó en la Escuela Textil de la Escuela Superior de Arte de Hamburgo.
+            </p>
+           <div class="hexagon">
+         <img src="img/portraits_02.jpg" alt="retrato">
+         </div>
+            <p>
+                Finalmente en 1922 entró como estudiante en la Escuela de la Bauhaus de Weimar, donde hizo el curso preliminar con Georg Muche y Johannes Itten. Las mujeres no podían acceder a algunas disciplinas, por lo que Anni no pudo entrar en el taller de vidrio en su segundo año y tuvo que optar por el de tejido a cargo de Gunta Stölzl. </p>
+                <p>
+                El diseño textil de la Bauhaus se centró más en el campo práctico profesional durante esa década y para cuando concluyó sus estudios en el curso 1929/30, Annie ya había demostrado sobradamente su magisterio en este área. Por ejemplo, creó un exitoso tejido insonoro, reflectante y lavable (hecho principalmente de algodón y celofán) específicamente para un auditorio musical.
+                </p>
+    
+            </div>
+        </article>
+    </body>
+
+    </html>
